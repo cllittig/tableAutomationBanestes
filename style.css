@@ -1,0 +1,77 @@
+/* Estilos para o container principal */
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o container ocupe toda a altura da tela */
+    padding: 20px;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    max-width: 800px; /* Limita a largura máxima da tabela */
+    border-collapse: collapse; /* Remove o espaçamento entre as células */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que as bordas arredondadas sejam aplicadas */
+}
+
+/* Estilos para o cabeçalho da tabela */
+thead {
+    background-color: #; /* Verde */
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilos para o corpo da tabela */
+tbody {
+    background-color: white; /* Fundo branco para o corpo */
+    color: #333; /* Cor do texto escura */
+}
+
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd; /* Linha divisória entre as linhas */
+    font-size: 16px;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Efeito hover nas linhas */
+}
+
+/* Estilos para a última linha do corpo da tabela */
+tbody tr:last-child td {
+    border-bottom: none; /* Remove a borda inferior da última linha */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .mainContainer {
+        padding: 10px;
+    }
+
+    table {
+        margin: 10px;
+    }
+
+    thead th, tbody td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    thead th, tbody td {
+        padding: 8px;
+        font-size: 10px;
+    }
+}
